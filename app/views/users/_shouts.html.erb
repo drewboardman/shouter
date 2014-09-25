@@ -1,0 +1,9 @@
+	<ul class="list-group">
+	<%= @shouts.each do |shout| %>
+		<li class="list-group-item">
+			<%= @user.username %>
+			 shouted 
+			 <%= shout %>
+		</li>
+	<% end -%>
+	</ul>

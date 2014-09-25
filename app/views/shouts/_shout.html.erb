@@ -1,0 +1,12 @@
+		<ul class="list-group">
+		<%= div_for shout do %>
+			<li class="list-group-item">
+				<%= gravatar shout.user %>
+				<%= link_to shout.user.username, shout.user %>
+			shouted 
+				<%= render shout.content %>
+			
+				<%= link_to time_ago_in_words(shout.created_at), shout %>
+				 ago
+		<% end -%>
+			</li>

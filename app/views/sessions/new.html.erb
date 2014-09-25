@@ -1,0 +1,11 @@
+<%= simple_form_for :session, url: session_path do |form| %>
+  <div>
+    <%= form.input :email %>
+  </div>
+  <div>
+    <%= form.input :password %>
+  </div>
+  <div>
+    <%= form.button :submit, label: 'Your username please' %>
+  </div>
+<% end %>

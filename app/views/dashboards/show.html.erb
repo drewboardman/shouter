@@ -1,0 +1,25 @@
+<div class="row">
+
+	<div class="col-lg-8">
+		<%= simple_form_for @dashboard.new_text_shout do |form| %>
+			<%= form.input :body, label: 'Shout', placeholder: 'Type your shout here' %>
+
+			<%= form.submit 'Shout', class: 'btn' %>
+		<% end %>
+	</div>
+
+	<div class="col-lg-4">
+	<%= simple_form_for @dashboard.new_photo_shout do |form| %>
+		<%= form.file_field :image, :label => 'Image', :class => 'btn'  %>
+
+		<%= form.submit 'Shout', class: 'btn' %>
+	<% end %>
+	</div>
+	
+</div>
+
+<div class="row">
+	<div class="col-lg-10">
+		<%= render @dashboard.timeline %>
+	</div>
+</div>
